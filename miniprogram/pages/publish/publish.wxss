@@ -1,0 +1,81 @@
+.aa{
+  height: 1000px;
+  width: 100wh;
+  background-color: rgb(244,244,244);
+}
+/* 小程序的长度单位是rpx   1px  =  屏幕宽度 / 720 rpx 1px =0.55rpx*/ 
+.a{
+  height: 100rpx;
+  width: 100%; 
+  background-color: rgba(236,97,104);
+  border-color: white;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  line-height: 100px;
+  text-align:center;
+}
+.b{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white
+}
+.c{
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  border-radius: 15px;
+  margin:25px;
+}
+.c1{
+  margin-left:15px ;
+  width:400px;
+  height: 50px;
+  border-top: 0px;
+  border-left:0px;
+  border-right: 0px;
+  border-bottom:5px solid=rgb(209, 207, 207);
+}
+.d{
+  margin-left:15px ;
+  width:400px;
+  border-top: 0px;
+  border-left:0px;
+  border-right: 0px;
+  border-bottom:5px solid=rgb(209, 207, 207);
+}
+.beizhu{
+  width: 600px;
+  height: 165px;
+  font-size: 20px;
+  border-radius: 15px;
+  
+  text-indent:20px;
+  margin:8px;
+}
+.e{
+  width: 600px;
+  height: 40px;
+  background-color: rgba(117,213,212);
+  border-radius: 15px;
+  color: white;
+  line-height: 40px;
+  text-align:center;
+  margin-left: 25px;
+}
+.f{
+  position:absolute;
+  bottom: 0px;
+}
+.f1{
+  font-size: large;
+  font-weight: bolder;
+  margin-left: 50px;
+}
+.f2{
+  height: 80px;
+  line-height: 100px;
+  margin-left: 50px;
+ 
+}

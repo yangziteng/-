@@ -1,0 +1,30 @@
+<view class="aa">
+    <view class="a">
+        <view class="b">
+            摄影跟拍
+        </view>
+    </view>
+    <view class="c">
+        <view>
+            <view ><input class="c1" type="" name="" id="" value="" placeholder="任务开始时长"  /></view>
+            <view><input  class="c1" type="" name="" id="" value="" placeholder="任务开始时间"   /></view>
+            <view><input  class="c1" type="" name="" id="" value="" placeholder="任务悬赏金额"  /></view>
+            <view><input  class="c1" type="" name="" id="" value="" placeholder="任务专区"   /></view>
+            <view><input  class="c1" type="" name="" id="" value="" placeholder="是否加急"   /></view>
+        </view>
+    </view>
+    <view class="d">
+        <textarea class="beizhu"placeholder="备注..."></textarea>
+    </view>
+    <view class="e">
+        确实修改
+    </view>
+    <view class="f">
+        <view class="f1">
+            温馨提示：
+        </view>
+        <view class="f2">
+            请注意保护个人隐私，如“代拿快递”在接单请不要暴露个人信息
+        </view>
+    </view>
+    </view>
