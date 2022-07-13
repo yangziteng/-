@@ -9,5 +9,5 @@
 ## 参考文档
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
-- [语雀参考文档](https://www.yuque.com/docs/share/35b20385-f851-4979-8853-470361130f44?# 《悬赏令产品分析》)
+- [语雀参考文档](https://www.yuque.com/docs/share/35b20385-f851-4979-8853-470361130f44?#) 《悬赏令产品分析》
 
