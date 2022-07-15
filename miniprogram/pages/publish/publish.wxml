@@ -1,31 +1,39 @@
 <view class="aa">
-  <view class="a">
-    <view class="b">
-      摄影跟拍ss
+  <view class="header">
+    <view class="header-word">
+      摄影跟拍
     </view>
   </view>
-  <view class="c">
+  <view class="main">
     <view>
       <view class="body">
-        <image src="./imgaes/计时.png" class="body1" alt=""></image>
-        <input class="c1" type="" name="" id="" value="" placeholder="任务开始时长" />
+        <image src="./imgaes/计时.png" class="body5" alt=""></image>
+        <picker class="main-word" mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+    <view class="picker">
+      任务持续时长: {{time}}
+    </view>
+  </picker>
       </view>
-      <view class="body">
-        <image src="./imgaes/时间.png" class="body1" alt=""></image>
-        <input class="c1" type="" name="" id="" value="" placeholder="任务开始时间" />
+      <view class="body1">
+        <image src="./imgaes/时间.png" class="body5" alt=""></image>
+        <picker class="main-word" mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+    <view class="picker">
+      任务开始时间: {{time}}
+    </view>
+  </picker>
       </view>
-      <view class="body">
-        <image src="./imgaes/钱.png" class="body1" alt=""></image>
-        <input class="c1" type="" name="" id="" value="" placeholder="任务悬赏金额" />
+      <view class="body1">
+        <image src="./imgaes/钱.png" class="body5" alt=""></image>
+        <input class="main-word" type="" name="" id="" value="" placeholder="任务悬赏金额" />
       </view>
       <view class="body3">
-        <image src="./imgaes/添加.png" class="body1" alt=""></image>
-        <input class="c1" type="" name="" id="" value="" placeholder="任务专区" />
-        <image src="./imgaes/添加.png" class="body1" alt=""></image>
+        <image src="./imgaes/添加.png" class="body5" alt="" style="width: 59rpx; height: 45rpx; display: block; box-sizing: border-box"></image>
+        <input class="main-word" type="" name="" id="" value="" placeholder="任务专区" />
+        <image src="./imgaes/添加.png" class="body5" alt="" style="width: 64rpx; height: 45rpx; display: block; box-sizing: border-box"></image>
       </view>
       <view class="body3">
         <view class="body4-left">
-          <image src="./imgaes/是否加急.png" class="body1" alt=""></image>
+          <image src="./imgaes/是否加急.png" class="body5" alt=""></image>
           <view class="body1-text">是否加急</view>
         </view>
         <switch></switch>
@@ -33,17 +41,17 @@
 
     </view>
   </view>
-  <view class="d">
+  <view class="note">
     <textarea class="beizhu" placeholder="备注..."></textarea>
   </view>
-  <view class="e">
+  <view class="switch">
     确实修改
   </view>
-  <view class="f" style="width: 603rpx; height: 93rpx; display: block; box-sizing: border-box; left: 36rpx; top: 886rpx; position: absolute">
-    <view class="f1" style="width: 603rpx; height: 68rpx; display: block; box-sizing: border-box">
+  <view class="hint" style="width: 603rpx; height: 93rpx; display: block; box-sizing: border-box; left: 36rpx; top: 886rpx; position: absolute">
+    <view class="hint1" style="width: 603rpx; height: 68rpx; display: block; box-sizing: border-box">
       温馨提示：
     </view>
-    <view class="f2" style="width: 603rpx; height: 68rpx; display: block; box-sizing: border-box">
+    <view class="hint2" style="width: 603rpx; height: 68rpx; display: block; box-sizing: border-box">
       请注意保护个人隐私，如“代拿快递”在接单请不要暴露个人信息
     </view>
   </view>
