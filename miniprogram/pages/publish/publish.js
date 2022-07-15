@@ -64,3 +64,22 @@ Page({
 
   }
 })
+Page({
+  data: {
+    array: ['摄影专区', '兼职专区', '跑腿专区'],
+    objectArray: [
+      {
+        id: 0,
+        name: '摄影专区'
+      },
+      {
+        id: 1,
+        name: '兼职专区'
+      },
+      {
+        id: 2,
+        name: '跑腿专区'
+      },
+    ],  
+    index}
+  })

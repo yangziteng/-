@@ -7,7 +7,7 @@
   <view class="main">
     <view>
       <view class="body">
-        <image src="./imgaes/计时.png" class="body5" alt=""></image>
+        <image src="./imgaes/计时.png" class="body5" alt="" ></image>
         <picker class="main-word" mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
     <view class="picker">
       任务持续时长: {{time}}
@@ -15,20 +15,26 @@
   </picker>
       </view>
       <view class="body1">
-        <image src="./imgaes/时间.png" class="body5" alt=""></image>
-        <picker class="main-word" mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
-    <view class="picker">
-      任务开始时间: {{time}}
-    </view>
-  </picker>
+        <image src="./imgaes/时间.png" class="body5" alt="" style="width: 40rpx; height: 43rpx; display: block; box-sizing: border-box"></image>
+        <view class="section">
+        <picker class="main-word" mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+          <view class="picker">
+          任务开始时间: {{date}}
+          </view>
+        </picker>
+        </view>
       </view>
       <view class="body1">
-        <image src="./imgaes/钱.png" class="body5" alt=""></image>
+        <image src="./imgaes/钱.png" class="body5" alt="" style="width: 50rpx; height: 45rpx; display: block; box-sizing: border-box"></image>
         <input class="main-word" type="" name="" id="" value="" placeholder="任务悬赏金额" />
       </view>
       <view class="body3">
         <image src="./imgaes/添加.png" class="body5" alt="" style="width: 59rpx; height: 45rpx; display: block; box-sizing: border-box"></image>
-        <input class="main-word" type="" name="" id="" value="" placeholder="任务专区" />
+        <picker class="main-word" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      任务专区：{{array[index]}}
+    </view>
+  </picker>
         <image src="./imgaes/添加.png" class="body5" alt="" style="width: 64rpx; height: 45rpx; display: block; box-sizing: border-box"></image>
       </view>
       <view class="body3">
