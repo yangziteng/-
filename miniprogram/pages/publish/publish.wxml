@@ -7,7 +7,7 @@
   <view class="main">
     <view>
       <view class="body">
-        <image src="./imgaes/计时.png" class="body5" alt="" ></image>
+        <image mode="scaleToFill" src="./imgaes/计时.png" class="body5" alt="" ></image>
         <picker class="main-word" mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
     <view class="picker">
       任务持续时长: {{time}}
@@ -15,7 +15,7 @@
   </picker>
       </view>
       <view class="body1">
-        <image src="./imgaes/时间.png" class="body5" alt="" style="width: 40rpx; height: 43rpx; display: block; box-sizing: border-box"></image>
+        <image  mode="scaleToFill" src="./imgaes/时间.png" class="body5" alt="" ></image>
         <view class="section">
         <picker class="main-word" mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
           <view class="picker">
@@ -25,21 +25,21 @@
         </view>
       </view>
       <view class="body1">
-        <image src="./imgaes/钱.png" class="body5" alt="" style="width: 50rpx; height: 45rpx; display: block; box-sizing: border-box"></image>
-        <input class="main-word" type="" name="" id="" value="" placeholder="任务悬赏金额" />
+        <image  mode="scaleToFill" src="./imgaes/钱.png" class="body5" alt="" ></image>
+        <input class="main-word" type="number" name="" id="" value="" placeholder="任务悬赏金额" />
       </view>
-      <view class="body3">
-        <image src="./imgaes/添加.png" class="body5" alt="" style="width: 59rpx; height: 45rpx; display: block; box-sizing: border-box"></image>
-        <picker class="main-word" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="body3" style="border-bottom: 1rpx solid #e7e7e7;">
+        <image  mode="scaleToFill" src="./imgaes/添加.png" style="width:45rpx" class="body5" alt="" ></image>
+        <picker class="main-word" bindchange="bindPickerChange"  value="{{index}}" range="{{array}}">
     <view class="picker">
       任务专区：{{array[index]}}
     </view>
   </picker>
-        <image src="./imgaes/添加.png" class="body5" alt="" style="width: 64rpx; height: 45rpx; display: block; box-sizing: border-box"></image>
+        <image  mode="scaleToFill" src="./imgaes/添加.png" class="body5" alt="" ></image>
       </view>
       <view class="body3">
         <view class="body4-left">
-          <image src="./imgaes/是否加急.png" class="body5" alt=""></image>
+          <image  mode="scaleToFill" src="./imgaes/是否加急.png" class="body5" alt=""></image>
           <view class="body1-text">是否加急</view>
         </view>
         <switch></switch>

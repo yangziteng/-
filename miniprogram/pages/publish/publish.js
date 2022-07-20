@@ -5,9 +5,18 @@ Page({
    * 页面的初始数据
    */
   data: {
+    date:"",
 
   },
+  bindDateChange(e){
+    console.log(e.detail.value)
+    this.setData({date:e.detail.value})
+  },
+  bindTimeChange(e){
+    console.log(e)
+    this.setData({time:e.detail.value})
 
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -81,5 +90,5 @@ Page({
         name: '跑腿专区'
       },
     ],  
-    index}
+    }
   })
