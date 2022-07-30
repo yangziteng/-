@@ -5,7 +5,41 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    select: false,
+    last_time: '一天',
+    first_time: '2022/5/27 15:00',
+    thData: [
+      {
+        label: '任务名称：',
+        value: '摄影跟拍',
+        src: ''
+      },
+      {
+        label: '任务持续时长：',
+        value: '半天',
+        src: 'images/time1.png'
+      },
+      {
+        label: '任务开始时间：',
+        value: '2022/5/27 15:00',
+        src: 'images/time2.png'
+      },
+      {
+        label: '任务悬赏金额：',
+        value: '115元',
+        src: 'images/money.png'
+      },
+      {
+        label: '任务专区：',
+        value: '摄影专区',
+        src: ''
+      },
+      {
+        label: '备注：',
+        value: '',
+        src: ''
+      }
+    ]
   },
 
   /**
@@ -13,6 +47,18 @@ Page({
    */
   onLoad(options) {
 
+  },
+  bindShowMsg() {
+    this.setData({
+     select:!this.data.select
+    })
+  },
+  mySelect(e) {
+   var name = e.currentTarget.dataset.name
+   this.setData({
+    last_time: name,
+    select: false
+   })
   },
 
   /**

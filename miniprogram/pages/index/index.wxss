@@ -1,0 +1,74 @@
+.top_box{
+  width: 93%;
+  height: 500rpx;
+  background-color: white;
+  padding: 0 25rpx;
+  box-sizing: border-box;
+  border-radius: 30rpx;
+  margin: auto;
+}
+.middle_box {
+  width: 93%;
+  height: 250rpx;
+  background-color: white;
+  /* padding: 0 25rpx; */
+  /* box-sizing: border-box; */
+  border-radius: 30rpx;
+  margin: 30rpx;
+  display: flex;
+  flex-direction: row;
+}
+.th {
+  /* // 垂直居中 */
+  display: flex;
+  align-items: center;    
+  justify-content: space-around;
+  flex-direction: row;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid rgb(241, 241, 241);
+}
+.th-1 {
+  display: flex;
+  width: 35%;
+  margin: 10rpx;
+  color: rgb(207, 206, 206);
+}
+.th-2 {
+  display: flex;
+  width: 40%;
+  color: rgb(119, 117, 117);
+}
+.th-3 {
+  display: flex;
+  margin: 10rpx;
+  color: rgb(207, 206, 206);
+}
+.th-4 {
+  display: flex;
+  margin: 10rpx;
+  color: rgb(71, 70, 70);
+}
+.tag {
+  /* width: 40%; */
+  padding: 0rpx 20rpx;
+  line-height: 55rpx;
+  box-sizing: border-box;
+  color: black;
+  background-color: rgb(116, 103, 226);
+  border-radius: 20rpx;
+}
+.th-img {
+  width: 60rpx;
+  height: 60rpx;
+  /* background-color: #ccc; */
+}
+.btn {
+  /* color: darkgrey !important; */
+  display: flex;
+  justify-content: space-around;
+  width: 300rpx !important;
+  line-height: 80rpx !important;
+  background-color:rgb(155, 207, 206) !important;
+  margin: 5rpx;
+  border-radius: 50px;
+}
