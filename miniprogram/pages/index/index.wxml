@@ -31,14 +31,14 @@
   <van-tab title="{{item.name}}" wx:for="{{tabArr}}">
     <!-- 卡片数据 -->
       <view class="dataBox" wx:for="{{item.data}}">
-        <view class="dataBox_time">时间：2022.6.1</view>
+        <view class="dataBox_time">时间：{{item.showTime}}</view>
         <view class="dataBox_title">
           <view style="width: 78%;overflow: hidden;">{{item.title}}</view>
         </view>
         <view class="dataBox_text">
-          <view>地点：线上/不限</view>
-          <view>业务要求：熟练掌握ps、AI等工具</view>
-          <view>联系电话：12345678</view>
+          <view>地点：{{item.where}}</view>
+          <view>业务要求：{{item.require}}</view>
+          <view>联系电话：{{item.phoneNum}}</view>
         </view>
         <view class="dataBox_usermsg">
           <image class="dataBox_usermsg_touxiangImage" src="{{item.touxiangUrl}}"></image>
@@ -50,11 +50,11 @@
         <view class="dataBox_money">
           <view class="dataBox_money_top">
             <image class="dataBox_money_top_image" src="./image/huo.png"></image>
-            <view class="dataBox_money_top_num">1000</view>
+            <view class="dataBox_money_top_num">{{item.hot}}</view>
           </view>
           <view class="dataBox_money_bottom">
             <view class="dataBox_money_bottom_left">悬赏金</view>
-            <view class="dataBox_money_bottom_num">150</view>
+            <view class="dataBox_money_bottom_num">{{item.money}}</view>
           </view>
         </view>
 
