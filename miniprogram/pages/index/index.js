@@ -4,14 +4,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    left:0.625,  // 初始化滑块位置
-    secIcons:[//金刚区的图标
-      {imgUrl:'https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibDQFks5pOuShJWibDXwwdedywTShX9R6ylXkNHUuUUFgGG2P1HmgNhAvOq1ZAiaps7zTGfQd47MpQ/132',name:"名字"},
-      {imgUrl:'https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibDQFks5pOuShJWibDXwwdedywTShX9R6ylXkNHUuUUFgGG2P1HmgNhAvOq1ZAiaps7zTGfQd47MpQ/132',name:"名字"},
-      {imgUrl:'https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibDQFks5pOuShJWibDXwwdedywTShX9R6ylXkNHUuUUFgGG2P1HmgNhAvOq1ZAiaps7zTGfQd47MpQ/132',name:"名字"},
-      {imgUrl:'https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibDQFks5pOuShJWibDXwwdedywTShX9R6ylXkNHUuUUFgGG2P1HmgNhAvOq1ZAiaps7zTGfQd47MpQ/132',name:"名字"},
 
-    ],
     // 广告轮播图
     image:[
       {url:'https://636c-cloud1-6gtqj1v4873bad50-1307814679.tcb.qcloud.la/tomato_daka/%E5%9B%BE%E7%89%87/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202204022334162.jpg?sign=0a342961ab9b7aac6afa71dbebc9b00b&t=1649058814'},
@@ -101,20 +94,6 @@ Page({
       {imageUrl:'./image/05.png',name:'兼职专区'},
       {imageUrl:'./image/04.png',name:'更多任务'},
     ]
-    },
-      //金刚区滑动事件,这里主要实现的是进度条跟随导航滚动
-    scroll(event){
-      let scrollLeft = event.detail.scrollLeft + 375;
-      let scrllWidth = event.detail.scrollWidth;
-      let left;
-      if(scrollLeft < 395){
-        left = `65.625%`
-      }else{
-        left = `${(scrollLeft) / scrllWidth * 100}%`
-      }
-      this.setData({
-        left, //模拟滑块滑动 根据css设置 距离左边的百分比
-      })
     },
   /**
    * 生命周期函数--监听页面加载

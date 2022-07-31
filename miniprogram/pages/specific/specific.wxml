@@ -1,0 +1,22 @@
+<view class="top_box">
+  <block wx:for="{{thData}}" wx:for-item="e" wx:for-index="idx">
+    <view class="th">
+      <view class="th-1">{{e.label}}</view>
+      <view class="th-2">
+        <view wx:if="{{e.label == '任务专区：'}}" class=" tag">{{e.value}}</view>
+        <view wx:else>{{e.value}}</view>
+      </view>
+      <image src="{{e.src}}" class="th-img"></image>
+    </view>
+  </block>
+</view>
+<view class="middle_box">
+  <block wx:for="{{noteData}}" wx:for-item="e" wx:for-index="idx">
+    <view class="th-3">备注:</view>
+    <view class="th-4">{{e.value}}</view>
+  </block>
+</view>
+<view style="display: flex; justify-content: space-around;">
+  <button class="btn" type="primary">立即联系</button>
+  <button class="btn" type="primary">领取任务</button>
+</view>
