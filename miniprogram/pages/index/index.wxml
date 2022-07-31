@@ -1,4 +1,68 @@
-<view>
-首页 
-测试文字
+<!-- 顶部 -->
+<view class="topBox">
+  <view class="topBox_Box" style="margin-top: {{index==0||index==1?'0rpx':'25rpx'}};" wx:for="{{natArr}}">
+    <image class="topBox_Box_left" src="{{item.imageUrl}}" mode="widthFix"></image>
+    <view class="topBox_Box_right">{{item.name}}</view>
+  </view>
 </view>
+
+<!-- 搜索 -->
+<view class="sousuo">
+  <image class="sousuo_left" src="./image/sousuo.png"></image>
+  <view class="sousuo_right">搜任务</view>
+</view>
+
+<view class="myData">
+  <view class="myData_box">我要发布</view>
+  <view class="myData_box">我的悬赏</view>
+</view>
+<!-- 广告区 -->
+<!-- <view class="ADBox">
+  <swiper class="box1_swiper" indicator-dots="true" autoplay="true" interval="3000" duration="1200">
+    <block wx:for="{{image}}">
+      <swiper-item>
+        <image src="{{item.url}}" class="slide_image" mode="aspectFill" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view> -->
+
+<van-tabs active="{{ active }}" bind:change="onChange"  color="#7c66f5" animated >
+  <van-tab title="{{item.name}}" wx:for="{{tabArr}}">
+    <!-- 卡片数据 -->
+      <view class="dataBox" wx:for="{{item.data}}">
+        <view class="dataBox_time">时间：2022.6.1</view>
+        <view class="dataBox_title">
+          <view style="width: 78%;overflow: hidden;">{{item.title}}</view>
+        </view>
+        <view class="dataBox_text">
+          <view>地点：线上/不限</view>
+          <view>业务要求：熟练掌握ps、AI等工具</view>
+          <view>联系电话：12345678</view>
+        </view>
+        <view class="dataBox_usermsg">
+          <image class="dataBox_usermsg_touxiangImage" src="{{item.touxiangUrl}}"></image>
+          <view class="dataBox_usermsg_name">{{item.name}}</view>
+          <image class="dataBox_usermsg_sexImage" src="{{item.sex == '男'?'./image/men.png':'./image/female.png'}}"></image>
+          <view class="dataBox_usermsg_time">{{item.time}}</view>
+        </view>
+
+        <view class="dataBox_money">
+          <view class="dataBox_money_top">
+            <image class="dataBox_money_top_image" src="./image/huo.png"></image>
+            <view class="dataBox_money_top_num">1000</view>
+          </view>
+          <view class="dataBox_money_bottom">
+            <view class="dataBox_money_bottom_left">悬赏金</view>
+            <view class="dataBox_money_bottom_num">150</view>
+          </view>
+        </view>
+
+      </view>
+      <view style="width: 100vw;height: 100rpx;"></view>
+  </van-tab>
+</van-tabs>
+
+
+
+

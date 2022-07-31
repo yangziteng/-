@@ -1,0 +1,276 @@
+/* pages/index/index.wxss */
+/* 图标模块 */
+.second-module-allicon{
+  background: #ffffff;
+  border-radius:8px;
+  position: relative;
+  height: 380rpx;
+  overflow : hidden;
+}
+
+scroll-view {
+  white-space: nowrap;
+}
+/* 去除滚动条 */
+::-webkit-scrollbar {
+  display:none;
+  width:0;
+  height:0;
+  color:transparent;
+}
+.nav-bar-wrap {
+  display: flex;
+  /* 金刚区排序方式 */
+  flex-flow: column wrap; 
+  height: 330rpx;
+}
+
+.nav-bar-item {
+  width: 151rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 28rpx;
+}
+
+.nav-bar-item image {
+  display: block;
+  height: 88rpx;
+  width: 88rpx;
+  margin: 0;
+  border-radius: 50%;
+}
+
+.nav-bar-item text {
+  margin-top: 13rpx;
+  line-height: 34rpx;
+  color:rgba(51,51,51,1);
+  font-size: 24rpx;
+}
+
+.slider {
+  position: absolute;
+  bottom: 20rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64rpx;
+  height: 6rpx;
+  border-radius: 3rpx;
+  background: #eee;
+}
+
+.slider-inside {
+  transform: translateX(-100%);
+  width: 42rpx;
+  height: 100%;
+  border-radius: 3rpx;
+  background-color: #0052D9;
+}
+/* 滑块滑动模拟 */
+.slider-inside-location {
+  position: absolute;
+  left: 65.625%;
+}
+/* 广告 */
+.ADBox {
+  width: 92vw;
+  height: 250rpx;
+  background: #F5F5F5;
+  border-radius: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20rpx auto;
+  overflow: hidden;
+}
+.box1_swiper{
+  height: 250rpx;
+  width: 100%;
+}
+.slide_image{
+  width: 100%;
+  height: 100%;
+}
+/* 数据卡片 */
+.dataBox {
+  width: 92vw;
+  height: auto;
+  background: white;
+  border-radius: 20rpx;
+  /* box-shadow: 0rpx 1rpx 10rpx 0.1rpx rgb(228, 228, 228); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 39rpx;
+}
+.dataBox_time{
+  position: absolute;
+  top: 38rpx;
+  right: 25rpx;
+  font-size: 20rpx;
+}
+.dataBox_title {
+  width: 92%;
+  margin: 30rpx 0;
+  letter-spacing: 2rpx;
+}
+.dataBox_text {
+  width: 92%;
+  height: auto;
+  padding-bottom: 20rpx;
+  color: gray;
+  font-size: 23rpx;
+  text-overflow: ellipsis;
+}
+.dataBox_tap {
+  width: 92%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+.dataBox_tap_view {
+  width: auto;
+  height: auto;
+  padding: 6rpx 25rpx;
+  background: #D4E3FC;
+  color: #0052D9;
+  border-radius: 5rpx;
+  margin-right: 15rpx;
+  font-size: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.dataBox_usermsg {
+  width: 92%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+  padding-bottom: 35rpx;
+  align-items: center;
+}
+.dataBox_usermsg_touxiangImage {
+  width: 41rpx;
+  height: 41rpx;
+  border-radius: 50%;
+}
+.dataBox_usermsg_name {
+  margin-left: 20rpx;
+  font-size: 25rpx;
+}
+.dataBox_usermsg_sexImage {
+  width: 35rpx;
+  height: 35rpx;
+  margin-left: 20rpx;
+}
+.dataBox_usermsg_time {
+  float: right;
+  position: absolute;
+  right: 33rpx;
+  color: gray;
+  font-size: 25rpx;
+}
+
+.topBox{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 41rpx 0;
+  justify-content:space-evenly;
+}
+.topBox_Box{
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  background: white;
+  border-radius: 20rpx;
+  align-items: center;
+  /* box-shadow: 0rpx 1rpx 10rpx 0.1rpx rgb(228, 228, 228); */
+}
+.topBox_Box_left{
+  width: 80rpx;
+  height: 80rpx;
+  padding: 30rpx 37rpx;
+}
+.topBox_Box_right{
+  padding: 30rpx 36rpx;
+  padding-left: 0;
+  font-size: 33rpx;
+  letter-spacing: 2rpx;
+}
+.sousuo{
+  width: 92vw;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  background: white;
+  margin-bottom: 41rpx;
+  border-radius: 20rpx;
+}
+.sousuo_left{
+  width: 45rpx;
+  height: 45rpx;
+  padding: 0 20rpx;
+}
+.sousuo_right{
+
+}
+.myData{
+  width: 92vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 41rpx;
+}
+.myData_box{
+  padding: 38rpx 106rpx;
+  color: white;
+  background:#8CD2D1;
+  border-radius: 20rpx;
+}
+.dataBox_money{
+  position: absolute;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  right: 30rpx;
+}
+.dataBox_money_top{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.dataBox_money_top_image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 46rpx;
+}
+.dataBox_money_top_num{
+  color:lightsalmon;
+  margin-left: 10rpx;
+  font-size: 25rpx;
+}
+.dataBox_money_bottom{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rpx;
+  align-items: center;
+}
+.dataBox_money_bottom_left{
+
+}
+.dataBox_money_bottom_num{
+  margin-left: 10rpx;
+  font-size: 25rpx;
+  color: #7c66f5;
+}

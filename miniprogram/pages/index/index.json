@@ -1,5 +1,9 @@
 {
   "usingComponents": {
-    "cloud-tip-modal": "/components/cloudTipModal/index"
-  }
+    "van-tab": "../../components/dist/tab/index",
+    "van-tabs": "../../components/dist/tabs/index"
+  },
+  "navigationBarBackgroundColor": "#7c66f5",
+  "navigationBarTitleText": "悬赏令",
+  "navigationBarTextStyle": "white"
 }
