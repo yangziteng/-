@@ -1,0 +1,284 @@
+/* pages/yemian4/yemian4.wxss */
+page{
+  background-color: #F8F8F8;
+}
+.bgcolor{
+  background-color: #F8F8F8;
+  width: 100%;
+  height: 100%;
+}
+
+.jiantou{
+  width: 25rpx;
+  height: 25rpx;
+  margin-left: 5rpx;
+}
+.PeopleImg{
+  border-radius: 50%;
+  width: 60rpx;
+  height: 60rpx;
+}
+.topBox{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.SerachBox{
+  display: flex;
+  flex-direction: row;
+  /* border: 1rpx solid #aaa; */
+  border-radius: 20px;
+  width: 650rpx;
+  background-color: #F7F8FA;
+  height: 60rpx;
+  align-items: center;
+  justify-content: center;
+  color: #898989;
+}
+.Serachbox_text{
+  font-size: 25rpx;
+  letter-spacing: 1rpx;
+}
+.midBox_top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: white;
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-left:50rpx ;
+  margin-right:50rpx ;
+}
+.Selectbox{
+  display: flex;
+  height: 80rpx;
+  width: 100rpx;
+  font-size: 26rpx;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10rpx;
+  color: #646464;
+}
+.Selectbox2{
+  display: flex;
+  height: 80rpx;
+  width: 80rpx;
+  font-size: 26rpx;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10rpx;
+  border-bottom-style: groove;
+  border-block-color: #312F30;
+  color:  #312F30;
+  font-weight: bold;
+}
+
+.Select{
+  font-size: 31rpx;
+}
+
+.midBox_top{
+  display: flex;
+  /* margin-top: 20rpx; */
+}
+.Seller{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 35rpx;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+}
+.sellername{
+  font-size: 25rpx;
+}
+.goodsId{
+  font-size: 20rpx;
+  color: #8A8A8A;
+  margin-top: 5rpx;
+}
+.good_state{
+  font-size: 26rpx;
+}
+.goods{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 210rpx;
+  margin-left: 50rpx;
+}
+.goods_img{
+  display: flex;
+  width: 150rpx;
+  justify-content: center;
+  align-items: center;
+}
+.goods_img>image{
+  width: 150rpx;
+  height: 110rpx;
+}
+.goodsname{
+  font-size: 26rpx;
+  /* font-weight: bold; */
+  letter-spacing: 1rpx;
+}
+.goodstype{
+  font-size: 22rpx;
+  margin-top: 5rpx;
+  margin-bottom: 60rpx;
+}
+.goodsabc{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.goodsprice{
+  display: flex;
+  flex-direction: row;
+  font-size: 30rpx;
+  font-weight: bold;
+  align-items: center;
+  width: 460rpx;
+}
+.goodsnumber{
+  font-size: 24rpx;
+  margin-top: 3rpx;
+  /* justify-content:flex-end; */
+  margin-left: 0rpx;
+}
+
+
+.midBox_mid{
+  
+  background-color: white;
+}
+
+.cheakBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.cheak{
+  font-size: 25rpx;
+}
+.Total{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  border-top: 1rpx solid #F6F6F6;
+
+}
+.total{
+  display: flex;
+  margin-right: 50rpx;
+  margin-left: 50rpx;
+  height: 70rpx;
+  justify-content: center;
+  align-items: center;
+  font-size: 25rpx;
+  font-size: 30rpx; 
+}
+.PaymentBox{
+  display: flex;
+  justify-content: flex-end;
+  height: 80rpx;
+  width: 100%;
+  background-color: white;
+  align-items: center;
+  border-top: 1rpx solid #F6F6F6;
+}
+.Paytype1{
+  display: flex;
+  width: 95rpx;
+  height: 45rpx;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50rpx;
+  border: 1rpx solid #F0F0F0;
+  margin-left: 20rpx;
+}
+.Paytype2{
+  display: flex;
+  width: 95rpx;
+  height: 45rpx;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50rpx;
+  background-color: #302F34;
+  border: 1rpx solid #302f34;
+  margin-left: 20rpx;
+  margin-right: 50rpx;
+}
+.quxiao{
+  text-align: center;
+  letter-spacing: 1rpx;
+  font-size: 22rpx;
+  margin-top: -1rpx;
+}
+.fukuan{
+  text-align: center;
+  color: white;
+  letter-spacing: 1rpx;
+  font-size: 22rpx;
+  margin-top: -1rpx;
+}
+
+.midBox_bottom{
+  background-color: white;
+  margin-top: 20rpx;
+  width: 100%;
+}
+.midbox_bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+
+}
+.midBox_botton_right{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.mbl_text{
+  font-size: 24rpx;
+}
+.PeopleNum{
+  font-size: 24rpx;
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+}
+.bottomBox{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top:35rpx ;
+  padding-bottom:35rpx ;
+}
+.bottomBox_text{
+  font-size: 28rpx;
+  color: #898989;
+  letter-spacing: 1rpx;
+}
+.midBox{
+  width: 100vw;
+}
+.van-tabs{
+  background: white;
+}

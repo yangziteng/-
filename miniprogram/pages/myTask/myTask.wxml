@@ -1,0 +1,104 @@
+<view class="bgcolor">
+
+  <view class="midBox">
+      <!-- 顶部导航栏和渲染内容 -->
+    <view></view>
+    <van-tabs animated  offset-top="55" nav-class="van-tabs" active="{{ active }}" bind:change="onChange">
+      <van-tab title="{{item.select}}" wx:for="{{navOrder}}">
+        <!-- 循环渲染订单 -->
+        <view wx:for="{{item.orderArr}}">
+
+          <view style="display: flex;flex-direction: column;background-color: white;">
+            <!-- 渲染店铺与订单编号 -->
+            <view class="Seller">
+              <view class="SellerName">
+                <view class="sellername">任务专区：{{item.sellerName}}</view>
+                <view class="goodsId">悬赏订单编号：{{item.orderId}}</view> 
+              </view>
+              
+              <!-- 待承接 -->
+              <view class="good_state" style="color: #7867eb;" wx:if="{{!item.isget&&!item.iscomplete&&!item.ispastdue?true:false}}"><view>待承接</view></view>
+              <!-- 已承接 -->
+              <view class="good_state" style="color: #bbe4e3;" wx:if="{{item.isget&&!item.iscomplete&&!item.ispastdue?true:false}}"><view>已承接</view></view>
+              <!-- 已结束 -->
+              <view class="good_state" style="color: #f0e8ca;" wx:if="{{item.isget&&item.iscomplete&&!item.ispastdue?true:false}}"><view>已结束</view></view>
+              <!-- 已过期 -->
+              <view class="good_state" style="color: #d28c8c;" wx:if="{{item.isget&&item.iscomplete&&item.ispastdue?true:false}}"><view>已过期</view></view>
+
+            </view>
+            <view data-item="{{item}}" data-index="{{index}}" bindtap="getMsg">
+            <!-- 渲染商品信息 -->
+            <view class="goods" >
+              <view class="goods_img">
+              <!-- 判断专区显示图片 -->
+              <image wx:if="{{item.sellerName=='摄影专区'?true:false}}" src="./image/02.png" mode="widthFix" ></image>
+              <image wx:if="{{item.sellerName=='跑腿专区'?true:false}}" src="./image/03.png" mode="widthFix" ></image>
+              <image wx:if="{{item.sellerName=='兼职专区'?true:false}}" src="./image/04.png" mode="widthFix" ></image>
+              <image wx:if="{{item.sellerName=='更多任务'?true:false}}" src="./image/05.png" mode="widthFix" ></image>
+              
+              </view>
+              <view>
+                <view style="margin-left:15rpx ;">
+                  <view class="goodsname">{{item.goodsData_name}}</view>
+                  <view class="goodstype" style="display: flex;flex-direction: row;" >
+                  
+                    <view>{{item.goodsData_color}}</view>
+                    <view style="margin-left: 15rpx;">{{item.goodsData_time}}</view>
+                    
+                  </view>
+                  <view class="goodsabc">
+                    <view class="goodsprice">¥{{item.goodsData_price}}</view>
+                    <view class="goodsnumber">×{{item.goodsDAta_number}}</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            </view>
+          </view>
+
+          <view class="midBox_mid"> 
+            <view class="Total"><view class="total">总金额 ¥{{item.total}}</view></view>
+
+            <!-- 待承接 -->
+            <view class="PaymentBox" wx:if="{{!item.isget&&!item.iscomplete&&!item.ispastdue?true:false}}">
+              <view class="Paytype1" style="background-color: white;color: #d28c8c;border: 1rpx solid #F0F0F0;width: auto;margin-right: 50rpx;"><view class="quxiao" style="padding:0 15rpx;" data-item="{{item}}" bindtap="getMsg">删除任务</view></view>
+            </view>
+            <!-- 已承接 -->
+            <view class="PaymentBox" style="margin-left: -50rpx;" wx:if="{{item.isget&&!item.iscomplete&&!item.ispastdue?true:false}}">
+              <view class="Paytype1"><view class="quxiao" style="padding:0 15rpx;" data-item="{{item}}" bindtap="cancelOther">取消</view></view>
+            </view>
+            <!-- 已结束 -->
+            <view class="PaymentBox" wx:if="{{item.isget&&item.iscomplete&&!item.ispastdue?true:false}}">
+              <view class="Paytype1" style="background-color: white;color: #d28c8c;border: 1rpx solid #F0F0F0;width: auto;margin-right: 50rpx;"><view class="quxiao" style="padding:0 15rpx;" data-item="{{item}}" bindtap="getMsg">删除任务</view></view>
+            </view>
+            <!-- 已过期 -->
+            <view class="PaymentBox" wx:if="{{item.isget&&item.iscomplete&&item.ispastdue?true:false}}">
+              <view class="Paytype1" style="background-color: white;color: #d28c8c;border: 1rpx solid #F0F0F0;width: auto;margin-right: 50rpx;"><view class="quxiao" style="padding:0 15rpx;" data-item="{{item}}" bindtap="getMsg">删除任务</view></view>
+            </view>
+
+          </view>
+          <view style="width: 100%;height: 20rpx;background-color: #F8F8F8;"></view>
+        </view>
+
+      </van-tab>
+    </van-tabs>
+
+    <view class="midBox_bottom" bindtap="gotoIndex">
+      <view class="midbox_bottom" style="display: flex;align-items: center;justify-content: center;">
+        <view class="midBox_botton_right">
+          <image class="PeopleImg" style="width: 41rpx;height: 41rpx;" src="./image/shauxin.png"></image>
+          <view class="PeopleNum">点击刷新</view>
+          <image class="jiantou" src=""></image>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+  <view class="bottomBox">
+    <view class="bottomBox_text">
+      (⊙o⊙)啊哦，没有更多的任务啦
+    </view>
+  </view>
+
+</view>

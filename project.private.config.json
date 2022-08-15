@@ -72,6 +72,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "我的领取任务",
+          "pathName": "pages/myTask/myTask",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
